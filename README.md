@@ -66,6 +66,11 @@ No build step, runtime npm dependencies or custom test suite are added.
    named `alloy`; install ACDL using `adobeDataLayer`. Publish the matching library.
    Avoid duplicate SDK/page-view rules and ensure all tags honor consent and withdrawal.
 
+**Userful links:**
+
+- Link to Above parameters values - https://rmisw.visualstudio.com/NARM%20BC%20Content/_wiki/wikis/NARM-BC-Content.wiki/2266/RMCF-Boilerplate-%E2%80%93-EDS-Project-Onboarding-Guide
+- Link to Set up offers/Personalization on Landing page - https://rmisw.visualstudio.com/NARM%20BC%20Content/_wiki/wikis/NARM-BC-Content.wiki/1703/EDS-Personalisation-Guide
+
 **Routing:** `main--{repo}--{owner}.aem.live` and exact custom hosts in `productionHosts`
 use `prod`. All `.aem.page` previews, other branches and unlisted hosts use `nonProd`.
 Enter custom hostnames without schemes, paths or wildcards. Configuration is browser-readable;
@@ -130,10 +135,3 @@ Client-side IDs/URLs remain visible to visitors, even with a private Git reposit
 `.env` ignore rules do not protect tracked files/history; review changes and rotate exposed
 credentials. See [GitHub secret scanning](https://docs.github.com/en/code-security/secret-scanning).
 
-Before adding confidential material, create a **private** project using
-[Use this template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template),
-or [clone and push](https://docs.github.com/en/repositories/creating-and-managing-repositories/duplicating-a-repository)
-the approved starter history to an empty private repository rather than making a public fork.
-Public forks cannot simply be made private. Cloning preserves ancestry; templates do not.
-Authorize AEM Code Sync for the new repository. Repository privacy does not restrict the
-deployed website: configure website access separately using the [EDS documentation](https://www.aem.live/docs/).
